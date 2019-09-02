@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+
+	<script>
+		var did_she = false;
+	</script>
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141245946-1"></script>
     <script>
@@ -27,13 +33,27 @@
 
 <div dir="rtl">
 <h2>האם קרן ילדה כבר?</h2>
-<h1 style="font-size: 100px"><font color="red">לא</font></h1> 
-<!-- <h1 style="font-size: 100px"><font color="navy">כן</font></h1> -->
+<p id="heb"></p>
+<script>
+	if (did_she) {
+		document.getElementById("heb").innerHTML = "<h1 style=\"font-size: 100px\"><font color=\"navy\">כן</font></h1>";
+	} else {
+		document.getElementById("heb").innerHTML = "<h1 style=\"font-size: 100px\"><font color=\"red\">לא</font></h1>";
+	}
+</script>
+ 
 </div>
 <br><br>
 <h2>Keren a-t-elle déjà accouché?</h2>
-<h1 style="font-size: 100px"><font color="red">Non</font></h1> 
-<!-- <h1 style="font-size: 100px"><font color="navy">Oui</font></h1> -->
+<p id="fr"></p>
+<script>
+	if (did_she) {
+		document.getElementById("fr").innerHTML = "<h1 style=\"font-size: 100px\"><font color=\"navy\">Oui</font></h1>";
+	} else {
+		document.getElementById("fr").innerHTML = "<h1 style=\"font-size: 100px\"><font color=\"red\">Non</font></h1>";
+	}
+</script>
+
 <br><br>
 <img src="img.jpg">
 
