@@ -55,7 +55,14 @@
 </script>
 
 <br><br>
-<img src="img.jpg">
+<p id="imge"></p>
+<script>
+	if (did_she) {
+		document.getElementById("imge").innerHTML = "<img src=\"img_yes.jpg\">";
+	} else {
+		document.getElementById("imge").innerHTML = "<img src=\"img_no.jpg\">";
+	}
+</script>
 
 </b></center>
 </body>
